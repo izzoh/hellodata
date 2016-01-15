@@ -23,6 +23,7 @@ task fatJar(type: Jar) {
                 'Implementation-Version': version,
                 'Main-Class': 'io.isengard.mapreduce.mapper.Frequency'
     }
+    destinationDir = System.getenv('CIRCLE_ARTIFACTS')
     baseName = project.name + '-all'
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
     with jar
