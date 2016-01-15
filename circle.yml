@@ -1,11 +1,7 @@
 machine:
   java:
     version: oraclejdk8
-dependencies:
-  cache_directories:
-     - "libs"
-     - "gradle-2.7"
 test:
   override:
-    - gradle-2.7/bin/gradle fatJar
-    - gradle-2.7/bin/gradle test
+    - ./gradlew fatJar
+    - ./gradlew test
