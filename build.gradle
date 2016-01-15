@@ -2,6 +2,8 @@ group 'io.isengard.mapreduce'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
+apply plugin: 'checkstyle'
+apply plugin: 'findbugs'
 
 sourceCompatibility = 1.5
 
@@ -17,7 +19,7 @@ dependencies {
 //create a single Jar with all dependencies
 task fatJar(type: Jar) {
     manifest {
-        attributes 'Implementation-Title': 'Gradle Jar File Example',
+        attributes 'Implementation-Title': 'hellodata Jar File',
                 'Implementation-Version': version,
                 'Main-Class': 'io.isengard.mapreduce.mapper.Frequency'
     }
