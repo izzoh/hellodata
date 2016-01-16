@@ -5,3 +5,8 @@ test:
   override:
     - ./gradlew fatJar
     - ./gradlew test
+deployment:
+  prod:
+    branch: master
+    commands:
+      - aws s3 cp $CIRCLE_ARTIFACTS/hellodata-all-1.0-SNAPSHOT.jar s3://cs8803/hellodata/hellodata.jar

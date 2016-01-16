@@ -2,6 +2,7 @@ package io.isengard.mapreduce.mapper;
 
 /**
  * Created by nickrobinson on 1/15/16.
+ * nick@isengard.io
  */
 import java.io.IOException;
 
@@ -10,7 +11,7 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
 public class FrequencyReducer extends Reducer<Text ,  IntWritable ,  Text ,  IntWritable> {
-    @Override public void reduce(Text eventID,  Iterable<IntWritable> counts,  Context context)
+    @Override public void reduce(Text eventID, Iterable<IntWritable> counts,  Context context)
             throws IOException,  InterruptedException {
 
         int sum  = 0;

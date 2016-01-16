@@ -2,6 +2,7 @@ package io.isengard.mapreduce.mapper;
 
 /**
  * Created by nickrobinson on 1/15/16.
+ * nick@isengard.io
  */
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;

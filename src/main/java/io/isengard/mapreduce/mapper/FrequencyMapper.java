@@ -1,6 +1,7 @@
 package io.isengard.mapreduce.mapper;
 /**
  * Created by nickrobinson on 1/15/16.
+ * nick@isengard.io
  */
 import java.io.IOException;
 
